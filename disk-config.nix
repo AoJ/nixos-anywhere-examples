@@ -19,7 +19,7 @@
           type = "partition";
           name = "ESP";
           start = "1MiB";
-          end = "100MiB";
+          end = "1024MiB";
           bootable = true;
           content = {
             type = "mdraid";
@@ -29,7 +29,7 @@
         {
           name = "root";
           type = "partition";
-          start = "100MiB";
+          start = "1024MiB";
           end = "100%";
           part-type = "primary";
           bootable = true;
