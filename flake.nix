@@ -37,7 +37,7 @@
       interface = "eth0";
     };
     dhcpcd.enable = false;
-    usePredictableInterfaceNames = lib.mkForce false;
+    usePredictableInterfaceNames = false;
     interfaces = {
       eth0 = {
         ipv4.addresses = [
