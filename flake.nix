@@ -4,7 +4,7 @@
   inputs.disko.inputs.nixpkgs.follows = "nixpkgs";
 
   outputs = { self, nixpkgs, disko, ... }@attrs: {
-    nixosConfigurations.hetzner-cloud = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.b = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = attrs;
       modules = [
